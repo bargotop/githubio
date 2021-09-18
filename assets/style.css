@@ -5,18 +5,18 @@ DIV {
   width: 100%;
   height: 100%;
   background: crimson;
-  box-shadow: 0 -150px 70px -120px teal inset,
-              0 -220px 70px -120px yellowgreen inset,
-              0 -280px 70px -120px gold inset;
-  animation: background 4s infinite alternate;
+  box-shadow: 0 -50px 700px -120px teal inset,
+              0 -400px 700px -120px yellowgreen inset,
+              0 -800px 700px -120px gold inset;
+  animation: background 10s infinite alternate;
 }
 
 @keyframes background {
   50% {
     background: darkviolet;
-    box-shadow: 0 -140px 70px -120px mediumorchid inset,
-                0 -210px 70px -120px teal inset,
-                0 -280px 70px -120px plum inset;
+    box-shadow: 0 -840px 700px -120px mediumorchid inset,
+                0 -810px 700px -120px teal inset,
+                0 -880px 700px -120px plum inset;
   }
 }
 
