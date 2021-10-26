@@ -30,3 +30,37 @@ BODY {
   background: #EEE;
   font-size: 16px;
 }
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.item{
+    padding: 10px;
+}
+
+.btn{
+    outline: none;
+    display: block;
+    border: solid 2px #0081D5;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background: #ffffff;
+    color:#0081D5;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn:hover,
+.btn:focus{
+    background: #0081D5;
+    color: #ffffff;
+}
+.btn:active{
+    background: #ffffff;
+    color: #0081D5;
+}
