@@ -21,7 +21,7 @@ particlesJS("particles-js", {
           "nb_sides": 5
         },
         "image": {
-          "src": "./media/autumnv1.png",
+          "src": "./media/autumn.png",
           "width": 100,
           "height": 100
         }
