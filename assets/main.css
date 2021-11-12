@@ -1,0 +1,188 @@
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px rgb(119, 76, 117);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(50, 104, 136);
+    border-radius: 10px;
+}
+
+/* BG */
+#bg {
+  -moz-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  height: 100%;
+  left: 0;
+  opacity: 0.375;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  #bg div {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 150%; }
+    #bg div.visible {
+      -moz-animation: bg 45s linear infinite;
+      -webkit-animation: bg 45s linear infinite;
+      -ms-animation: bg 45s linear infinite;
+      animation: bg 45s linear infinite;
+      opacity: 1;
+      visibility: visible;
+      z-index: 1; }
+      #bg div.visible.top {
+        z-index: 2; }
+      @media screen and (max-width: 1280px) {
+        #bg div.visible {
+          -moz-animation: bg 29.25s linear infinite;
+          -webkit-animation: bg 29.25s linear infinite;
+          -ms-animation: bg 29.25s linear infinite;
+          animation: bg 29.25s linear infinite; } }
+      @media screen and (max-width: 736px) {
+        #bg div.visible {
+          -moz-animation: bg 18s linear infinite;
+          -webkit-animation: bg 18s linear infinite;
+          -ms-animation: bg 18s linear infinite;
+          animation: bg 18s linear infinite; } }
+    #bg div:only-child {
+      -moz-animation-direction: alternate !important;
+      -webkit-animation-direction: alternate !important;
+      -ms-animation-direction: alternate !important;
+      animation-direction: alternate !important; }
+  body.is-preload #bg {
+    opacity: 0; }
+
+@-moz-keyframes bg {
+  0% {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -moz-transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%); } }
+
+@-webkit-keyframes bg {
+  0% {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -moz-transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%); } }
+
+@-ms-keyframes bg {
+  0% {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -moz-transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%); } }
+
+@keyframes bg {
+  0% {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -moz-transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%); } }
+
+.c-page{
+    padding-top: 60px;
+    width: 100%;
+    height: calc(100% - 60px);
+    position: fixed;
+  }
+  a{
+    text-decoration: none;
+  }
+  .c-topbar{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #232d3a;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.098), 0 1px 5px 0 rgba(0,0,0,.084);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.098), 0 1px 5px 0 rgba(0,0,0,.084);
+  }
+  .c-logo{
+    width: 30px;
+    fill: #fff;
+  }
+  .c-arrow{
+    width: 30px;
+    fill: #fff;
+    margin-right: 16px;
+  }
+  .c-iframe{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    border: 0;
+  }
+  .adv{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+  }
+  .adv__close{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width8: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      font-size: 24px;
+      border: 0;
+      background: none;
+      box-shadow: none;
+      z-index: 999;
+      cursor: pointer;
+      outline: none;
+      background-color: #fff;
+  }
+  .adv__close:hover{
+      color: #333;
+  }
