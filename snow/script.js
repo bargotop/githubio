@@ -21,7 +21,7 @@ particlesJS("particles-js", {
           "nb_sides": 5
         },
         "image": {
-          "src": "./media/snow.png",
+          "src": "/media/snow.png",
           "width": 100,
           "height": 100
         }
